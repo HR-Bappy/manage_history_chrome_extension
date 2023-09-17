@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Manage History Extension",
+  "description": "Chrome extension to manage browser history",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon-16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js":["content.js"],
+      "css":["style.css"]
+    }
+  ],
+  "permissions":[
+    "tabs",
+    "storage"
+  ]
+}

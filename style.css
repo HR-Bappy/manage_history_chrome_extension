@@ -1,0 +1,75 @@
+.browser-history-popup{
+ margin: 5px 0;
+
+}
+.browser-history-popup #main-content{
+  width: 320px;
+  height: 200px;
+  overflow: auto;
+}
+.browser-history-popup #main-content .btn-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  padding: 5px;
+
+}
+.browser-history-popup #main-content .btn-group.d-none{
+  display: none ;
+}
+
+.browser-history-popup #main-content .btn-group a{
+  width: 80%;
+  cursor: pointer;
+  color: rgb(5, 28, 66);
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  word-wrap: break-word;
+}
+.browser-history-popup #main-content .btn-group a:hover{
+  text-decoration: underline;
+}
+
+.browser-history-popup #main-content .btn-group button{
+  color: red;
+  border: 1px solid red;
+  transition: all .2s ease-in-out;
+  margin-left: 3px;
+  padding:  3px 5px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+}
+.browser-history-popup #main-content .btn-group button:hover{
+  background: red;
+  color: #fff;
+
+}
+p.history-extension-text{
+  color: red;
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  left: 50vw;
+  z-index: 99999;
+}
+
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(44, 44, 44, 0.258) !important;
+
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar {
+  height: 2px !important;
+  width: 2px !important;
+  background-color: rgba(44, 44, 44, 0.258) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 17, 17) !important;
+  border-radius: 10px !important;
+}
